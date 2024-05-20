@@ -51,7 +51,7 @@ function loadWidget(companyId) {
             TotalCO2.textContent = companyData.widgetData.TotalCO2;
 
             const img = document.createElement('img');
-            img.src = 'https://pocketseed.github.io/PSLiveWidget/PSVerified.png'; 
+            img.src = 'https://pocketseedio.github.io/PSLiveWidget/PSVerified.png'; 
             img.alt = 'Descriptive text';
 
             // assemble the widget
