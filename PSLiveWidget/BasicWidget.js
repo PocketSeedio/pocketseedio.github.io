@@ -40,6 +40,9 @@ function loadWidget(companyId) {
             const content = document.createElement('p');
             content.textContent = companyData.widgetData.content;
 
+            content.textContent += " Here is some more information.";
+
+
             const info = document.createElement('p');
             info.textContent = companyData.widgetData.info;
 
