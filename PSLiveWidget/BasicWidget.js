@@ -25,7 +25,7 @@ function loadWidget(companyId) {
             
             const contentWrapper = document.createElement('div');
             contentWrapper.className = 'contentWrapper';
-            contentWrapper.style = 'background-color: red';
+            
 
             const imgContainer = document.createElement('div');
             imgContainer.className = 'imgContainer';
@@ -44,7 +44,7 @@ function loadWidget(companyId) {
             info.textContent = companyData.widgetData.info;
 
             const img = document.createElement('img');
-            img.src = 'https://pocketseed.github.io/PSLiveWidget/PSverified.png'; 
+            img.src = 'https://pocketseed.github.io/PSLiveWidget/PSVerified.png'; 
             img.alt = 'Descriptive text';
 
             // assemble the widget
