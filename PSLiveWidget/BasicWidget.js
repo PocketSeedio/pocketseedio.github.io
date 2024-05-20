@@ -16,7 +16,7 @@ function loadWidget(companyId) {
             widget.className = 'widget';
 
             const anchor = document.createElement('a');
-            anchor.href = 'https://www.google.com';  // Set the URL where you want users to be directed when they click the widget.
+            anchor.href = companyData.widgetData.URL;  // Set the URL where you want users to be directed when they click the widget.
             anchor.style.textDecoration = 'none'; // Removes underline from all text within the anchor.
             anchor.target = '_blank';  // Opens the link in a new tab.
             anchor.style.display = 'block'; /* Makes the anchor fill the entire container */
@@ -33,18 +33,22 @@ function loadWidget(companyId) {
             const textContainer = document.createElement('div');
             textContainer.className = 'textContainer';
 
-            const title = document.createElement('h2');
-            title.textContent = companyData.widgetData.title;
-            title.className = 'title';
+            const BusinessName = document.createElement('h2');
+            BusinessName.textContent = companyData.widgetData.BusinessName;
+            BusinessName.className = 'BusinessName';
+            BusinessName.style.color = '#f00'
 
-            const content = document.createElement('p');
-            content.textContent = companyData.widgetData.content;
+            const TotalDollar = document.createElement('p');
+            TotalDollar.textContent = companyData.widgetData.TotalDollar;
 
-            content.textContent += " Here is some more information.";
+            TotalDollar.textContent += " contributed.";
 
 
-            const info = document.createElement('p');
-            info.textContent = companyData.widgetData.info;
+            const TotalKelp = document.createElement('p');
+            TotalKelp.textContent = companyData.widgetData.TotalKelp;
+
+            const TotalCO2 = document.createElement('p');
+            TotalCO2.textContent = companyData.widgetData.TotalCO2;
 
             const img = document.createElement('img');
             img.src = 'https://pocketseed.github.io/PSLiveWidget/PSVerified.png'; 
@@ -56,9 +60,10 @@ function loadWidget(companyId) {
            contentWrapper.appendChild(imgContainer);
            contentWrapper.appendChild(textContainer);
             imgContainer.appendChild(img);
-            textContainer.appendChild(title);
-            textContainer.appendChild(content);
-            textContainer.appendChild(info);
+            textContainer.appendChild(BusinessName);
+            textContainer.appendChild(TotalDollar);
+            textContainer.appendChild(TotalKelp);
+            textContainer.appendChild(TotalCO2);
             
             
 

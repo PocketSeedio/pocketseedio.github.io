@@ -1,19 +1,23 @@
 {
     "companies": [
       {
-        "id": "company1",
+        "id": "pocketseed",
         "widgetData": {
-          "title": "Technoleaf Imapct Widget",
-          "content": "4,634 tonnes fo CO2 offset",
-          "info": "Contributed $3,023 to ocean restoration"
+          "BusinessName": "PocketSeed",
+          "URL": "https://www.pocketseed.io/brands/pocketseed",
+          "TotalDollar": "$3,023",
+          "TotalKelp": "10",
+          "TotalCO2": "1,000"
         }
       },
       {
-        "id": "company2",
+        "id": "agk42",
         "widgetData": {
-          "title": "Title of Company Two",
-          "content": "Content about Company Two",
-          "info": "Some other nice info"
+          "BusinessName": "AGK42",
+          "URL": "https://www.pocketseed.io/brands/agk42",
+          "TotalDollar": "$250",
+          "TotalKelp": "5",
+          "TotalCO2": "1,000"
         }
       }
     ]
