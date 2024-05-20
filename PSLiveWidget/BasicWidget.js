@@ -1,6 +1,11 @@
 function loadWidget(companyId) {
     document.addEventListener("DOMContentLoaded", function() {
 
+                // Step 1: Dynamically load the Google Font
+                const fontLink = document.createElement('link');
+                fontLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+                fontLink.rel = 'stylesheet';
+                document.head.appendChild(fontLink);
 
         const url = 'https://pocketseedio.github.io/PSLiveWidget/PSImpactData.json';
         fetch(url)
@@ -14,7 +19,8 @@ function loadWidget(companyId) {
 
             const widget = document.createElement('div');
             widget.className = 'widget';
-
+            widget.style.fontFamily = 'Roboto, sans-serif'; // Changed from Arial to Roboto
+            
             const anchor = document.createElement('a');
             anchor.href = companyData.widgetData.URL;  // Set the URL where you want users to be directed when they click the widget.
             anchor.style.textDecoration = 'none'; // Removes underline from all text within the anchor.
