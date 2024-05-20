@@ -2,7 +2,7 @@ function loadWidget(companyId) {
     document.addEventListener("DOMContentLoaded", function() {
 
 
-        const url = 'https://pocketseed.github.io/PSLiveWidget/PSImpactData.json';
+        const url = 'https://pocketseedio.github.io/PSLiveWidget/PSImpactData.json';
         fetch(url)
         .then(response => response.json())
         .then(data => {
