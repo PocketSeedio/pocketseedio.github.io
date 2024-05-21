@@ -42,7 +42,7 @@ function loadWidget(companyId) {
             const BusinessName = document.createElement('h2');
             BusinessName.textContent = companyData.widgetData.BusinessName;
             BusinessName.className = 'BusinessName';
-            BusinessName.style.color = '#f00'
+            BusinessName.style.color = '#333'
             BusinessName.style.size = '12px'
             
 
