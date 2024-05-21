@@ -20,7 +20,7 @@ function loadWidget(companyId) {
             const widget = document.createElement('div');
             widget.className = 'widget';
             widget.style.fontFamily = 'Roboto, sans-serif'; // Changed from Arial to Roboto
-            
+
             const anchor = document.createElement('a');
             anchor.href = companyData.widgetData.URL;  // Set the URL where you want users to be directed when they click the widget.
             anchor.style.textDecoration = 'none'; // Removes underline from all text within the anchor.
@@ -43,9 +43,12 @@ function loadWidget(companyId) {
             BusinessName.textContent = companyData.widgetData.BusinessName;
             BusinessName.className = 'BusinessName';
             BusinessName.style.color = '#f00'
+            BusinessName.style.size = '12px'
+            
 
             const TotalDollar = document.createElement('p');
             TotalDollar.textContent = companyData.widgetData.TotalDollar;
+            TotalDollar.style.size = '12px'
 
             TotalDollar.textContent += " contributed.";
 
