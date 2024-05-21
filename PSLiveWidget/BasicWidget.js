@@ -49,7 +49,7 @@ function loadWidget(companyId) {
             const TotalDollar = document.createElement('p');
             TotalDollar.textContent = companyData.widgetData.TotalDollar;
             TotalDollar.style.size = '12px'
-            TotalDollar.style.color = '#ccc'
+            TotalDollar.style.color = '#cccccc'
 
             TotalDollar.textContent += " contributed.";
 
