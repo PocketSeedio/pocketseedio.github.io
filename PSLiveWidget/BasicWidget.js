@@ -25,9 +25,9 @@ function loadWidget(companyId) {
             anchor.href = companyData.widgetData.URL;  // Set the URL where you want users to be directed when they click the widget.
             anchor.style.textDecoration = 'none'; // Removes underline from all text within the anchor.
             anchor.target = '_blank';  // Opens the link in a new tab.
-            anchor.style.display = 'block'; /* Makes the anchor fill the entire container */
-            anchor.style.width = '100%';   /* Ensures it spans the full width of its container */
-            anchor.style.height = '100%';  /* Ensures it spans the full height of its container */
+         //   anchor.style.display = 'block'; /* Makes the anchor fill the entire container */
+         //   anchor.style.width = '100%';   /* Ensures it spans the full width of its container */
+         //   anchor.style.height = '100%';  /* Ensures it spans the full height of its container */
             
             const contentWrapper = document.createElement('div');
             contentWrapper.className = 'contentWrapper';
