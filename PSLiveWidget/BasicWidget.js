@@ -39,7 +39,7 @@ function loadWidget(companyId) {
             const textContainer = document.createElement('div');
             textContainer.className = 'textContainer';
 
-            const BusinessName = document.createElement('h2');
+            const BusinessName = document.createElement('p');
             BusinessName.textContent = companyData.widgetData.BusinessName;
             BusinessName.className = 'BusinessName';
          
