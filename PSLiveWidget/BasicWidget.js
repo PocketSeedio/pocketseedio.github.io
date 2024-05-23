@@ -19,7 +19,7 @@ function loadWidget(companyId) {
 
             const widget = document.createElement('div');
             widget.className = 'widget';
-            widget.style.fontFamily = 'Roboto, sans-serif'; // Changed from Arial to Roboto
+           // widget.style.fontFamily = 'Roboto, sans-serif'; // Apply directly to P and H tags for font change
 
             const anchor = document.createElement('a');
             anchor.href = companyData.widgetData.URL;  // Set the URL where you want users to be directed when they click the widget.
@@ -42,14 +42,12 @@ function loadWidget(companyId) {
             const BusinessName = document.createElement('h2');
             BusinessName.textContent = companyData.widgetData.BusinessName;
             BusinessName.className = 'BusinessName';
-            BusinessName.style.color = '#333'
-            BusinessName.style.size = '12px'
+         
             
 
             const TotalDollar = document.createElement('p');
             TotalDollar.textContent = companyData.widgetData.TotalDollar;
-            TotalDollar.style.size = '12px'
-            TotalDollar.style.color = '#cccccc'
+
 
             TotalDollar.textContent += " contributed.";
 
