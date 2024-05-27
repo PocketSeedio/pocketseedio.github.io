@@ -3,7 +3,7 @@ function loadWidget(companyId) {
 
                 // Step 1: Dynamically load the Google Font
                 const fontLink = document.createElement('link');
-                fontLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+                fontLink.href = 'https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap';
                 fontLink.rel = 'stylesheet';
                 document.head.appendChild(fontLink);
 
@@ -23,10 +23,10 @@ function loadWidget(companyId) {
             //widget.style.flexDirection = 'column';
            // widget.style.alignItems = 'flex-start';
             widget.style.padding = '24px'
-           widget.style.fontFamily = 'Roboto, sans-serif'; // Apply directly to P and H tags for font change
+           widget.style.fontFamily = 'Epilogue, sans-serif'; // Apply directly to P and H tags for font change
            widget.style.background = '#FFF';
            widget.style.boxShadow = '0px 4px 16.4px 0px rgba(0, 0, 0, 0.10)';
-           widget.style.borderRadius = '24px'
+           widget.style.borderRadius = '16px'
 
             const anchor = document.createElement('a');
             anchor.href = companyData.widgetData.URL;  // Set the URL where you want users to be directed when they click the widget.
@@ -67,7 +67,7 @@ function loadWidget(companyId) {
             const img = document.createElement('img');
             img.src = 'https://pocketseedio.github.io/PSLiveWidget/PSVerified.png'; 
             img.alt = 'Descriptive text';
-            img.style.maxWidth = '150px';
+            img.style.minWidth = '250px';
 
             // assemble the widget
            widget.appendChild(anchor);
