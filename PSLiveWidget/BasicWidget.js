@@ -39,6 +39,7 @@ function loadWidget(companyId) {
             const textContainer = document.createElement('div');
             textContainer.className = 'textContainer';
 
+
             const BusinessName = document.createElement('p');
             BusinessName.textContent = companyData.widgetData.BusinessName;
             BusinessName.className = 'BusinessName';
@@ -46,6 +47,7 @@ function loadWidget(companyId) {
             
 
             const TotalDollar = document.createElement('p');
+            TotalDollar.textContent += "🌏 ";
             TotalDollar.textContent = companyData.widgetData.TotalDollar;
 
 
@@ -58,17 +60,17 @@ function loadWidget(companyId) {
             const TotalCO2 = document.createElement('p');
             TotalCO2.textContent = companyData.widgetData.TotalCO2;
 
-            const img = document.createElement('img');
-            img.src = 'https://pocketseedio.github.io/PSLiveWidget/PSVerified.png'; 
-            img.alt = 'Descriptive text';
-            img.style.maxWidth = '150px';
+            const verfiedBadge = document.createElement('img');
+            verfiedBadge.src = 'https://pocketseedio.github.io/PSLiveWidget/images/PSVerified.png'; 
+            verfiedBadge.alt = 'PocketSeed verified impact partner badge';
+            verfiedBadge.style.maxWidth = '150px';
 
             // assemble the widget
            widget.appendChild(anchor);
            anchor.appendChild(contentWrapper)
            contentWrapper.appendChild(imgContainer);
            contentWrapper.appendChild(textContainer);
-            imgContainer.appendChild(img);
+            imgContainer.appendChild(verfiedBadge);
             textContainer.appendChild(BusinessName);
             textContainer.appendChild(TotalDollar);
             textContainer.appendChild(TotalKelp);

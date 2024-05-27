@@ -49,6 +49,8 @@ function loadWidget(companyId) {
             const BusinessName = document.createElement('p');
             BusinessName.textContent = companyData.widgetData.BusinessName;
             BusinessName.className = 'BusinessName';
+            BusinessName.style.color = '#000'
+            BusinessName.style.fontSize = '24px'
          
             
 
@@ -61,11 +63,15 @@ function loadWidget(companyId) {
             const TotalKelp = document.createElement('p');
             TotalKelp.textContent = companyData.widgetData.TotalKelp;
 
+            TotalKelp.textContent +=  " Kelp planeted."
+
             const TotalCO2 = document.createElement('p');
             TotalCO2.textContent = companyData.widgetData.TotalCO2;
 
+            TotalCO2.textContent +=  " Kelp planeted."
+
             const img = document.createElement('img');
-            img.src = 'https://pocketseedio.github.io/PSLiveWidget/PSVerified.png'; 
+            img.src = 'https://pocketseedio.github.io/PSLiveWidget/images/PSVerified.png'; 
             img.alt = 'Descriptive text';
             img.style.maxWidth = '250px';
 
