@@ -22,6 +22,7 @@ function loadWidget(companyId) {
             widget.style.display = 'flex';
             widget.style.flexDirection = 'column';
             widget.style.alignItems = 'flex-start';
+            widget.style.padding = '24px'
            widget.style.fontFamily = 'Roboto, sans-serif'; // Apply directly to P and H tags for font change
            widget.style.background = '#FFF';
            widget.style.boxShadow = '0px 4px 16.4px 0px rgba(0, 0, 0, 0.10)';
