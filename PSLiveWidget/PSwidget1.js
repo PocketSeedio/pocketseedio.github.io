@@ -19,9 +19,9 @@ function loadWidget(companyId) {
 
             const widget = document.createElement('div');
             widget.className = 'widget';
-            widget.style.display = 'flex';
-            widget.style.flexDirection = 'column';
-            widget.style.alignItems = 'flex-start';
+            widget.style.display = 'inline-block';
+            //widget.style.flexDirection = 'column';
+           // widget.style.alignItems = 'flex-start';
             widget.style.padding = '24px'
            widget.style.fontFamily = 'Roboto, sans-serif'; // Apply directly to P and H tags for font change
            widget.style.background = '#FFF';
