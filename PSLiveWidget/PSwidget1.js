@@ -27,7 +27,6 @@ function loadWidget(companyId) {
            widget.style.background = '#FFF';
            widget.style.boxShadow = '0px 4px 16.4px 0px rgba(0, 0, 0, 0.10)';
            widget.style.borderRadius = '24px'
-           widget.style.minWidth = '325px'
 
             const anchor = document.createElement('a');
             anchor.href = companyData.widgetData.URL;  // Set the URL where you want users to be directed when they click the widget.
