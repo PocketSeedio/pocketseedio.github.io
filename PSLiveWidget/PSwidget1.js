@@ -49,12 +49,13 @@ function loadWidget(companyId) {
             const BusinessName = document.createElement('p');
             BusinessName.textContent = companyData.widgetData.BusinessName;
             BusinessName.className = 'BusinessName';
-            BusinessName.style.color = '#000'
+            BusinessName.style.color = '#000';
             BusinessName.style.fontSize = '24px'
          
             
 
             const TotalDollar = document.createElement('p');
+            TotalDollar.style.color = '#000';
 
             TotalDollar.textContent = "🌏 ";
             TotalDollar.textContent += companyData.widgetData.TotalDollar;
@@ -62,12 +63,15 @@ function loadWidget(companyId) {
 
 
             const TotalKelp = document.createElement('p');
+            TotalKelp.style.color = '#000';
             
             TotalKelp.textContent = "🪸 ";
             TotalKelp.textContent += companyData.widgetData.TotalKelp;
             TotalKelp.textContent +=  " Kelp planted."
 
             const TotalCO2 = document.createElement('p');
+            TotalCO2.style.color = '#000';
+            
             TotalCO2.textContent = "☁️ ";
             TotalCO2.textContent += companyData.widgetData.TotalCO2;
             TotalCO2.textContent +=  " CO2 removed."
@@ -83,7 +87,7 @@ function loadWidget(companyId) {
            contentWrapper.appendChild(imgContainer);
            contentWrapper.appendChild(textContainer);
             imgContainer.appendChild(img);
-            textContainer.appendChild(BusinessName);
+           // textContainer.appendChild(BusinessName);
             textContainer.appendChild(TotalDollar);
             textContainer.appendChild(TotalKelp);
             textContainer.appendChild(TotalCO2);
