@@ -22,11 +22,11 @@ function loadWidget(companyId) {
             widget.style.display = 'inline-block';
             //widget.style.flexDirection = 'column';
            // widget.style.alignItems = 'flex-start';
-            widget.style.padding = '24px'
+            widget.style.padding = '16px'
            widget.style.fontFamily = 'Epilogue, sans-serif'; // Apply directly to P and H tags for font change
            widget.style.background = '#FFF';
            widget.style.boxShadow = '0px 4px 16.4px 0px rgba(0, 0, 0, 0.10)';
-           widget.style.borderRadius = '16px'
+           widget.style.borderRadius = '24px'
 
             const anchor = document.createElement('a');
             anchor.href = companyData.widgetData.URL;  // Set the URL where you want users to be directed when they click the widget.
