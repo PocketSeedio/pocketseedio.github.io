@@ -67,7 +67,7 @@ function loadWidget(companyId) {
             const img = document.createElement('img');
             img.src = 'https://pocketseedio.github.io/PSLiveWidget/PSVerified.png'; 
             img.alt = 'Descriptive text';
-            img.style.minWidth = '250px';
+            img.style.maxWidth = '250px';
 
             // assemble the widget
            widget.appendChild(anchor);
