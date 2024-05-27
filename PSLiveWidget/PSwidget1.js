@@ -55,20 +55,21 @@ function loadWidget(companyId) {
             
 
             const TotalDollar = document.createElement('p');
-            TotalDollar.textContent = companyData.widgetData.TotalDollar;
 
+            TotalDollar.textContent += "🌏 ";
+            TotalDollar.textContent = companyData.widgetData.TotalDollar;
             TotalDollar.textContent += " contributed.";
 
 
             const TotalKelp = document.createElement('p');
+            
             TotalKelp.textContent = companyData.widgetData.TotalKelp;
-
-            TotalKelp.textContent +=  " Kelp planeted."
+            TotalKelp.textContent +=  " Kelp planted."
 
             const TotalCO2 = document.createElement('p');
             TotalCO2.textContent = companyData.widgetData.TotalCO2;
 
-            TotalCO2.textContent +=  " Kelp planeted."
+            TotalCO2.textContent +=  " Kelp planted."
 
             const img = document.createElement('img');
             img.src = 'https://pocketseedio.github.io/PSLiveWidget/images/PSVerified.png'; 

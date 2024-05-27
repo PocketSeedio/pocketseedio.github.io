@@ -49,8 +49,6 @@ function loadWidget(companyId) {
             const TotalDollar = document.createElement('p');
             TotalDollar.textContent += "🌏 ";
             TotalDollar.textContent = companyData.widgetData.TotalDollar;
-
-
             TotalDollar.textContent += " contributed.";
 
 
