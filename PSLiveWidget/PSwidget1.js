@@ -71,15 +71,15 @@ function loadWidget(companyId) {
 
             const TotalCO2 = document.createElement('p');
             TotalCO2.style.color = '#000';
-            
+
             TotalCO2.textContent = "☁️ ";
             TotalCO2.textContent += companyData.widgetData.TotalCO2;
             TotalCO2.textContent +=  " CO2 removed."
 
             const img = document.createElement('img');
             img.src = 'https://pocketseedio.github.io/PSLiveWidget/images/PSVerified.png'; 
-            img.alt = 'Descriptive text';
-            img.style.maxWidth = '250px';
+            img.alt = 'PocketSeed verified impact partner badge.';
+            img.style.maxWidth = '200px';
 
             // assemble the widget
            widget.appendChild(anchor);
