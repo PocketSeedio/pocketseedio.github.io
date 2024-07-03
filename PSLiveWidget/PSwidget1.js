@@ -6,7 +6,7 @@ function loadWidget(companyId, targetElementId) {
         fontLink.rel = 'stylesheet';
         document.head.appendChild(fontLink);
 
-        const url = 'https://pocketseedio.github.io/PSLiveWidget/PSImpactData.json';
+        const url = 'https://impactwidget.s3.ap-southeast-2.amazonaws.com/PSImpactData.json';
         fetch(url)
             .then(response => response.json())
             .then(data => {
