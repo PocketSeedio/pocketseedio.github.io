@@ -20,7 +20,7 @@ function loadWidget(companyId, targetElementId) {
                 widget.className = 'widget';
                 widget.style.display = 'inline-block';
                 widget.style.padding = '16px';
-                widget.style.margin = 'Auto';
+                widget.style.margin = '0 auto';
                 widget.style.fontFamily = 'Epilogue, sans-serif';
                 widget.style.background = '#FFF';
                 widget.style.boxShadow = '0px 4px 16.4px 0px rgba(0, 0, 0, 0.10)';
